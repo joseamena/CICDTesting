@@ -10,11 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var aLbl: UILabel!
+    private var data: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshUI()
     }
 
-
+    @IBAction func clicAction(_ sender: Any) {
+        data += 1
+        refreshUI()
+    }
+    
+    private func refreshUI() {
+        aLbl.text = "Count: " + String(data)
+    }
+    
 }
 
