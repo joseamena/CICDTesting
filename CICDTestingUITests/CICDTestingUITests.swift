@@ -32,10 +32,8 @@ class CICDTestingUITests: XCTestCase {
         
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let clicMeButton = app.buttons["Clic me"]
-        clicMeButton.tap()
-        let countLabel = app.staticTexts["Count: 1"]
-        XCTAssertTrue(countLabel.exists)
+        app.buttons["Clic me"].tap()
+        XCTAssertTrue(app.staticTexts["Count: 1"].exists)
     }
 
 //    func testLaunchPerformance() {

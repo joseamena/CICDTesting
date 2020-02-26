@@ -8,10 +8,13 @@
 
 import UIKit
 
+class ADepedency {
+    static var count: Int = 0
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var aLbl: UILabel!
-    private var data: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +26,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func clicAction(_ sender: Any) {
-        data += 1
+        ADepedency.count += 1
         refreshUI()
     }
     
     private func refreshUI() {
-        aLbl.text = "Count: " + String(data)
+        aLbl.text = "Count: " + String(ADepedency.count)
     }
     
 }
