@@ -57,6 +57,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0B11D4D82405B5C400841BB8"
+               BuildableName = "CICDTestingTests.xctest"
+               BlueprintName = "CICDTestingTests"
+               ReferencedContainer = "container:CICDTesting.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0B11D4E32405B5C400841BB8"
+               BuildableName = "CICDTestingUITests.xctest"
+               BlueprintName = "CICDTestingUITests"
+               ReferencedContainer = "container:CICDTesting.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
