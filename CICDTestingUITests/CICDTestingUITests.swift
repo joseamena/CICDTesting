@@ -35,6 +35,16 @@ class CICDTestingUITests: XCTestCase {
         app.buttons["Clic me"].tap()
         XCTAssertTrue(app.staticTexts["Count: 1"].exists)
     }
+    
+    func testExampleFail() {
+        // UI tests must launch the application that they test.
+        app.launch()
+        
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.buttons["Clic me"].tap()
+        XCTAssertTrue(app.staticTexts["Count: 0"].exists)
+    }
 
 //    func testLaunchPerformance() {
 //        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
